@@ -9,6 +9,18 @@ Will install dependencies for and compile the Android version of your ReactNativ
 ###### Things it doesn't
 Does not run tests or create an apk. Could be edited to do that.
 
+## Dependencies
+There's an `.nvmrc` set to default to node version `6.5.0`. Change it accordingly.
+
+If it's not present you should add a `link` npm script to your `package.json`, like so:
+```
+//...
+"scripts": {
+  //...
+  "link": "node node_modules/react-native/local-cli/cli.js link"
+}
+```
+
 ## How To Use
 
 Setup a new CodeShip build.
